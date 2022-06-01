@@ -1,0 +1,53 @@
+*{
+box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+h1{
+    color: yellow;
+    text-align: center;
+}
+.cajapacman{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid blue;
+    height: 80vh;
+    background-image: url("https://i.pinimg.com/originals/52/a3/3c/52a33c10ae0c117156dd2807a4f324da.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-y: 50%;
+} 
+.pacman{
+    position: relative;
+    animation: pacmancorre 25s infinite;
+}
+.pac{
+    width: 150px;
+}
+@keyframes pacmancorre {
+    0%   {top: -310px; left: -200px;}
+    5%  {top: -310px; left: 550px;}
+    10% {top: -222px; left: 550px;}
+    15% {top: -222px; left: 750px;}
+    20% {top: -310px; left: 750px;}
+    25% {top: -310px; left: 1500px;}
+    30% {top: -155px; left: 1500px;}
+    35% {top: -155px; left: 1150px;}
+    40% {top: 250px; left: 1150px;}
+    45% {top: 250px; left: 1450px;}
+    50% {top: 317px; left: 1450px;}
+    55% {top: 317px; left: -200px;}
+    60% {top: 250px; left: -200px;}
+    65% {top: 250px; left: -60px;}
+    70% {top: 183px; left: -60px;}
+    75% {top: 183px; left: -180px;}
+    80% {top: 115px; left: -180px;}
+    85% {top: 115px; left: 150px;}
+    90% {top: -155px; left: 150px;}
+    95% {top: -155px; left: -200px;}
+    100% {top: -310px; left: -200px;}
+}
